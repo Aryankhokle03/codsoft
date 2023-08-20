@@ -392,4 +392,9 @@ buttonEQUAL = Button(
 buttonEQUAL.pack(side = LEFT, expand = True, fill = "both")  
   
   
+window.mainloop()  
+ 
+buttonEQUAL.pack(side = LEFT, expand = True, fill = "both")  
+  
+  
 window.mainloop() 
