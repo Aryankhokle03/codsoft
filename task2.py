@@ -161,7 +161,7 @@ guiLabel = Label(
     anchor = SE,  
     font = ("Cambria Math", 20),  
     textvariable = the_data,  
-    background = "#ffffff",  
+    background = "cyan",  
     fg = "#000000"  
 )  
 # using the pack() method  
@@ -187,22 +187,23 @@ frameFour.pack(expand = True, fill = "both")
 buttonONE = Button(  
     frameOne,  
     text = "1",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20),  
     relief = GROOVE,  
     border = 0,  
-    command = button_1Clicked  
-)  
-# placing buttons side by side  
+    command = button_1Clicked  ,
+    bg="green"
+)   
 buttonONE.pack(side = LEFT, expand = True, fill = "both")  
   
 
 buttonTWO = Button(  
     frameOne,  
     text = "2",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20),  
     relief = GROOVE,  
     border = 0,  
-    command = button_2Clicked  
+    command = button_2Clicked,
+    bg="green"  
 )  
   
 buttonTWO.pack(side = LEFT, expand = True, fill = "both")  
@@ -210,10 +211,11 @@ buttonTWO.pack(side = LEFT, expand = True, fill = "both")
 buttonTHREE = Button(  
     frameOne,  
     text = "3",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20), 
     relief = GROOVE,  
     border = 0,  
-    command = button_3Clicked  
+    command = button_3Clicked ,
+    bg="green" 
 )  
 
 buttonTHREE.pack(side = LEFT, expand = True, fill = "both")  
@@ -222,10 +224,11 @@ buttonTHREE.pack(side = LEFT, expand = True, fill = "both")
 buttonC = Button(  
     frameOne,  
     text = "C",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20),  
     relief = GROOVE,  
     border = 0,  
-    command = button_CClicked  
+    command = button_CClicked ,
+    bg="red" 
 )  
   
 buttonC.pack(side = LEFT, expand = True, fill = "both")  
@@ -234,10 +237,11 @@ buttonC.pack(side = LEFT, expand = True, fill = "both")
 buttonFOUR = Button(  
     frameTwo,  
     text = "4",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20),  
     relief = GROOVE,  
     border = 0,  
-    command = button_4Clicked  
+    command = button_4Clicked ,
+    bg="green" 
 )  
 
 buttonFOUR.pack(side = LEFT, expand = True, fill = "both")  
@@ -246,20 +250,22 @@ buttonFOUR.pack(side = LEFT, expand = True, fill = "both")
 buttonFIVE = Button(  
     frameTwo,  
     text = "5",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20),  
     relief = GROOVE,  
     border = 0,  
-    command = button_5Clicked  
+    command = button_5Clicked  ,
+    bg="green"
 )  
 buttonFIVE.pack(side = LEFT, expand = True, fill = "both")  
 
 buttonSIX = Button(  
     frameTwo,  
     text = "6",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20),  
     relief = GROOVE,  
     border = 0,  
-    command = button_6Clicked  
+    command = button_6Clicked  ,
+    bg="green"
 )  
   
 buttonSIX.pack(side = LEFT, expand = True, fill = "both")  
@@ -268,9 +274,10 @@ buttonSIX.pack(side = LEFT, expand = True, fill = "both")
 buttonADD = Button(  
     frameTwo,  
     text = "+",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20),  
     relief = GROOVE,  
     border = 0,  
+    bg="red",
     
     command = button_AddClicked  
 )  
@@ -281,10 +288,11 @@ buttonADD.pack(side = LEFT, expand = True, fill = "both")
 buttonSEVEN = Button(  
     frameThree,  
     text = "7",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20),  
     relief = GROOVE,  
     border = 0,  
-    command = button_7Clicked  
+    command = button_7Clicked  ,
+    bg="green"
 )  
  
 buttonSEVEN.pack(side = LEFT, expand = True, fill = "both")  
@@ -293,10 +301,11 @@ buttonSEVEN.pack(side = LEFT, expand = True, fill = "both")
 buttonEIGHT = Button(  
     frameThree,  
     text = "8",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20),  
     relief = GROOVE,  
     border = 0,  
-    command = button_8Clicked  
+    command = button_8Clicked  ,
+    bg="green"
 )  
 
 buttonEIGHT.pack(side = LEFT, expand = True, fill = "both")  
@@ -305,10 +314,11 @@ buttonEIGHT.pack(side = LEFT, expand = True, fill = "both")
 buttonNINE = Button(  
     frameThree,  
     text = "9",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20),  
     relief = GROOVE,  
     border = 0,  
-    command = button_9Clicked  
+    command = button_9Clicked  ,
+    bg="green"
 )  
  
 buttonNINE.pack(side = LEFT, expand = True, fill = "both")  
@@ -317,10 +327,12 @@ buttonNINE.pack(side = LEFT, expand = True, fill = "both")
 buttonSUB = Button(  
     frameThree,  
     text = "-",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20),  
     relief = GROOVE,  
     border = 0, 
+    bg="red",
     command = button_SubClicked, 
+    
     
 )  
  
@@ -330,10 +342,11 @@ buttonSUB.pack(side = LEFT, expand = True, fill = "both")
 buttonZERO = Button(  
     frameFour,  
     text = "0",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20),  
     relief = GROOVE,  
     border = 0,  
-    command = button_0Clicked  
+    command = button_0Clicked  ,
+    bg="green"
 )  
  
 buttonZERO.pack(side = LEFT, expand = True, fill = "both")  
@@ -342,10 +355,10 @@ buttonZERO.pack(side = LEFT, expand = True, fill = "both")
 buttonMUL = Button(  
     frameFour,  
     text = "*",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20),  
     relief = GROOVE,  
     border = 0, 
-    
+    bg="red",
     command = button_MulClicked  
 )  
 
@@ -354,9 +367,10 @@ buttonMUL.pack(side = LEFT, expand = True, fill = "both")
 buttonDIV = Button(  
     frameFour,  
     text = "/",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20),  
     relief = GROOVE,  
     border = 0, 
+    bg="red",
      
     command = button_DivClicked  
 )  
@@ -367,14 +381,15 @@ buttonDIV.pack(side = LEFT, expand = True, fill = "both")
 buttonEQUAL = Button(  
     frameFour,  
     text = "=",  
-    font = ("Cambria", 22),  
+    font = ("Georgia", 20),  
     relief = GROOVE,  
     border = 0,  
     command = res ,
+    bg="red"
      
 )  
  
 buttonEQUAL.pack(side = LEFT, expand = True, fill = "both")  
   
   
-window.mainloop()  
+window.mainloop() 
